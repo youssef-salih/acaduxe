@@ -1,16 +1,13 @@
 import React from 'react';
 import { RouteProps } from 'react-router-dom';
 import {
-	TeamMenuAdmin,
-	clubMenuAdmin,
-	coachMenuAdmin,
+
 	componentPagesMenu,
 	dashboardPagesMenu,
 	demoPagesMenu,
 	gettingStartedPagesMenu,
 	pageLayoutTypesPagesMenu,
-	playerMenuAdmin,
-	staffMenuAdmin,
+	
 } from '../menu';
 
 import DashboardHeader from '../pages/_layout/_headers/DashboardHeader';
@@ -30,97 +27,6 @@ import DefaultHeader from '../pages/_layout/_headers/DefaultHeader';
 import DocumentationHeader from '../pages/_layout/_headers/DocumentationHeader';
 
 const headers: RouteProps[] = [
-	// teams
-	{
-		path: TeamMenuAdmin.listPages.subMenu.Teams.path,
-		element: <DashboardHeader />,
-	},
-	{
-		path: TeamMenuAdmin.listPages.subMenu.newTeam.path,
-		element: <DashboardHeader />,
-	},
-	{
-		path: '/equipe/edit',
-		element: <DashboardHeader />,
-	},
-	{
-		path: coachMenuAdmin.listPages.subMenu.coach.path,
-		element: <DashboardHeader />,
-	},
-	{
-		path: coachMenuAdmin.listPages.subMenu.addCoach.path,
-		element: <DashboardHeader />,
-	},
-	{
-		path: 'entraineur/detail/:id',
-		element: <DashboardHeader />,
-	},
-	{
-		path: 'entraineur/modifier/:id',
-		element: <DashboardHeader />,
-	},
-	{
-		path: 'evenement',
-		element: <DashboardHeader />,
-	},
-
-	// players
-	{
-		path: playerMenuAdmin.listPages.subMenu.player.path,
-		element: <DashboardHeader />,
-	},
-	{
-		path: playerMenuAdmin.listPages.subMenu.newPlayer.path,
-		element: <DashboardHeader />,
-	},
-	{
-		path: 'joueur/edit/:id',
-		element: <DashboardHeader />,
-	},
-	{
-		path: 'joueur/details/:id',
-		element: <DashboardHeader />,
-	},
-
-	// staf
-	{
-		path: staffMenuAdmin.listPages.subMenu.allStaff.path,
-		element: <DashboardHeader />,
-	},
-
-	{
-		path: staffMenuAdmin.listPages.subMenu.newStaff.path,
-		element: <DashboardHeader />,
-	},
-	{
-		path: 'staff/modifier/:id',
-		element: <DashboardHeader />,
-	},
-	{
-		path: 'staff/details/:id',
-		element: <DashboardHeader />,
-	},
-
-	// club
-	{
-		path: clubMenuAdmin.listPages.subMenu.allClub.path,
-		element: <DashboardHeader />,
-	},
-
-	{
-		path: clubMenuAdmin.listPages.subMenu.newClub.path,
-		element: <DashboardHeader />,
-	},
-
-	{
-		path: 'club/details/:id',
-		element: <DashboardHeader />,
-	},
-	{
-		path: 'club/modifier/:id',
-		element: <DashboardHeader />,
-	},
-	//
 	{ path: pageLayoutTypesPagesMenu.pageLayout.subMenu.onlySubheader.path, element: null },
 	{ path: pageLayoutTypesPagesMenu.pageLayout.subMenu.onlyContent.path, element: null },
 	{ path: pageLayoutTypesPagesMenu.blank.path, element: null },

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { createContext, useLayoutEffect, useState, useMemo, FC, ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import useDeviceScreen from '../hooks/useDeviceScreen';

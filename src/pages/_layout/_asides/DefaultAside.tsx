@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { ReactNode, useContext, useState } from 'react';
+import { ReactNode, useContext, useState } from 'react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 import Brand from '../../../layout/Brand/Brand';
@@ -9,22 +9,14 @@ import {
 	componentPagesMenu,
 	dashboardPagesMenu,
 	dashboardPageMenu,
-	clubMenuAdmin,
 	demoPagesMenu,
 	gettingStartedPagesMenu,
 	pageLayoutTypesPagesMenu,
-	TeamMenuAdmin,
-	coachMenuAdmin,
-	eventMenuAdmin,
-	playerMenuAdmin,
-	staffMenuAdmin,
-	trisoriesMenuAdmin,
 } from '../../../menu';
 import ThemeContext from '../../../contexts/themeContext';
 import Card, { CardBody } from '../../../components/bootstrap/Card';
 import Hand from '../../../assets/img/hand.png';
 import HandWebp from '../../../assets/img/hand.webp';
-import Icon from '../../../components/icon/Icon';
 import Button from '../../../components/bootstrap/Button';
 import useDarkMode from '../../../hooks/useDarkMode';
 import Aside, { AsideBody, AsideFoot, AsideHead } from '../../../layout/Aside/Aside';

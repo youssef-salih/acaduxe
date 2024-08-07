@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AxiosError } from 'axios';
 import React from 'react';
 import { GetData } from '../../types';

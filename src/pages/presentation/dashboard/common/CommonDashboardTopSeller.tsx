@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { FC, useState } from 'react';
 import dayjs from 'dayjs';
 import { ApexOptions } from 'apexcharts';

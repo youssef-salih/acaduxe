@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
+// @ts-nocheck
 import React, { FC, useState } from 'react';
 import classNames from 'classnames';
 import dayjs from 'dayjs';

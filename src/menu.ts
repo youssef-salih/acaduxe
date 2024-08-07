@@ -83,228 +83,228 @@ export const dashboardPageMenu = {
 	},
 };
 
-export const TeamMenuAdmin = {
-	pages: {
-		id: 'TeamsPage',
-		text: 'équipe',
-		icon: 'Extension',
-	},
-	listPages: {
-		id: 'Team',
-		text: 'équipe',
-		path: 'team',
-		icon: 'group',
-		subMenu: {
-			Teams: {
-				id: 'Teams',
-				text: 'Toutes les équipes',
-				path: 'equipes',
-				icon: 'Group',
-			},
-			newTeam: {
-				id: 'newTeam',
-				text: 'Créer une équipe',
-				path: 'equipes/ajouter',
-				icon: 'personAdd',
-			},
-		},
-	},
-};
+// export const TeamMenuAdmin = {
+// 	pages: {
+// 		id: 'TeamsPage',
+// 		text: 'équipe',
+// 		icon: 'Extension',
+// 	},
+// 	listPages: {
+// 		id: 'Team',
+// 		text: 'équipe',
+// 		path: 'team',
+// 		icon: 'group',
+// 		subMenu: {
+// 			Teams: {
+// 				id: 'Teams',
+// 				text: 'Toutes les équipes',
+// 				path: 'equipes',
+// 				icon: 'Group',
+// 			},
+// 			newTeam: {
+// 				id: 'newTeam',
+// 				text: 'Créer une équipe',
+// 				path: 'equipes/ajouter',
+// 				icon: 'personAdd',
+// 			},
+// 		},
+// 	},
+// };
 
-export const clubMenuAdmin = {
-	pages: {
-		id: 'club',
-		text: 'Club',
-		icon: 'Extension',
-	},
-	listPages: {
-		id: 'clubpage',
-		text: 'Club',
-		path: 'club',
-		icon: 'SportsSoccer',
-		subMenu: {
-			allClub: {
-				id: '',
-				text: 'Tout Club',
-				path: 'clubs',
-				icon: 'group',
-			},
-			newClub: {
-				id: '',
-				text: 'Créer Club',
-				path: 'clubs/ajouter',
-				icon: 'personAdd',
-			},
-			editClub: {
-				id: '',
-				text: 'Créer Club',
-				path: 'clubs/modifier',
-				icon: 'personAdd',
-				hide: true,
-			},
-			idClub: {
-				id: '',
-				text: 'Créer Club',
-				path: 'clubs/details',
-				icon: 'personAdd',
-				hide: true,
-			},
-		},
-	},
-};
+// export const clubMenuAdmin = {
+// 	pages: {
+// 		id: 'club',
+// 		text: 'Club',
+// 		icon: 'Extension',
+// 	},
+// 	listPages: {
+// 		id: 'clubpage',
+// 		text: 'Club',
+// 		path: 'club',
+// 		icon: 'SportsSoccer',
+// 		subMenu: {
+// 			allClub: {
+// 				id: '',
+// 				text: 'Tout Club',
+// 				path: 'clubs',
+// 				icon: 'group',
+// 			},
+// 			newClub: {
+// 				id: '',
+// 				text: 'Créer Club',
+// 				path: 'clubs/ajouter',
+// 				icon: 'personAdd',
+// 			},
+// 			editClub: {
+// 				id: '',
+// 				text: 'Créer Club',
+// 				path: 'clubs/modifier',
+// 				icon: 'personAdd',
+// 				hide: true,
+// 			},
+// 			idClub: {
+// 				id: '',
+// 				text: 'Créer Club',
+// 				path: 'clubs/details',
+// 				icon: 'personAdd',
+// 				hide: true,
+// 			},
+// 		},
+// 	},
+// };
 
-export const coachMenuAdmin = {
-	pages: {
-		id: 'coachPage',
-		text: 'coachs',
-		icon: 'Extension',
-	},
+// export const coachMenuAdmin = {
+// 	pages: {
+// 		id: 'coachPage',
+// 		text: 'coachs',
+// 		icon: 'Extension',
+// 	},
 
-	listPages: {
-		id: 'Entraineur',
-		text: 'Entraineur',
-		path: 'ent',
-		icon: 'Assignment',
-		subMenu: {
-			coach: {
-				id: 'coach',
-				text: 'tous les entraineur',
-				path: 'entraineurs',
-				icon: 'Assignment',
-			},
-			addCoach: {
-				id: 'newStaff',
-				text: 'Créer un Entraineur',
-				path: 'entraineurs/ajouter',
-				icon: 'personAdd',
-			},
-		},
-	},
-};
+// 	listPages: {
+// 		id: 'Entraineur',
+// 		text: 'Entraineur',
+// 		path: 'ent',
+// 		icon: 'Assignment',
+// 		subMenu: {
+// 			coach: {
+// 				id: 'coach',
+// 				text: 'tous les entraineur',
+// 				path: 'entraineurs',
+// 				icon: 'Assignment',
+// 			},
+// 			addCoach: {
+// 				id: 'newStaff',
+// 				text: 'Créer un Entraineur',
+// 				path: 'entraineurs/ajouter',
+// 				icon: 'personAdd',
+// 			},
+// 		},
+// 	},
+// };
 
-export const eventMenuAdmin = {
-	pages: {
-		id: 'eventPage',
-		text: 'events',
-		icon: 'Extension',
-	},
-	event: {
-		id: 'Event',
-		text: 'Events',
-		path: 'evenement',
-		icon: 'CalendarToday',
-	},
-};
-export const staffMenuAdmin = {
-	pages: {
-		id: 'staffPage',
-		text: 'staffs',
-		icon: 'Extension',
-	},
-	listPages: {
-		id: 'Staff',
-		text: 'Staff',
-		path: 'list-pages',
-		icon: 'Dvr',
-		subMenu: {
-			allStaff: {
-				id: 'Allstaff',
-				text: 'Tous Le staff',
-				path: 'staff',
-				icon: 'group',
-			},
-			newStaff: {
-				id: 'newStaff',
-				text: 'Créer Staff',
-				path: 'staff/ajouter',
-				icon: 'personAdd',
-			},
-			editStaff: {
-				id: 'editStaff',
-				text: 'Edit un Entraineur',
-				path: 'staff/modifier',
-				icon: 'personAdd',
-				hide: true,
-			},
-			detailsStaff: {
-				id: 'editStaff',
-				text: 'Edit un Entraineur',
-				path: 'staff/details',
-				icon: 'personAdd',
-				hide: true,
-			},
-		},
-	},
-};
+// export const eventMenuAdmin = {
+// 	pages: {
+// 		id: 'eventPage',
+// 		text: 'events',
+// 		icon: 'Extension',
+// 	},
+// 	event: {
+// 		id: 'Event',
+// 		text: 'Events',
+// 		path: 'evenement',
+// 		icon: 'CalendarToday',
+// 	},
+// };
+// export const staffMenuAdmin = {
+// 	pages: {
+// 		id: 'staffPage',
+// 		text: 'staffs',
+// 		icon: 'Extension',
+// 	},
+// 	listPages: {
+// 		id: 'Staff',
+// 		text: 'Staff',
+// 		path: 'list-pages',
+// 		icon: 'Dvr',
+// 		subMenu: {
+// 			allStaff: {
+// 				id: 'Allstaff',
+// 				text: 'Tous Le staff',
+// 				path: 'staff',
+// 				icon: 'group',
+// 			},
+// 			newStaff: {
+// 				id: 'newStaff',
+// 				text: 'Créer Staff',
+// 				path: 'staff/ajouter',
+// 				icon: 'personAdd',
+// 			},
+// 			editStaff: {
+// 				id: 'editStaff',
+// 				text: 'Edit un Entraineur',
+// 				path: 'staff/modifier',
+// 				icon: 'personAdd',
+// 				hide: true,
+// 			},
+// 			detailsStaff: {
+// 				id: 'editStaff',
+// 				text: 'Edit un Entraineur',
+// 				path: 'staff/details',
+// 				icon: 'personAdd',
+// 				hide: true,
+// 			},
+// 		},
+// 	},
+// };
 
-export const trisoriesMenuAdmin = {
-	pages: {
-		id: 'trisoriePage',
-		text: 'Trisorie',
-		icon: 'money',
-	},
-	listPages: {
-		id: 'trisorie',
-		text: 'Trisorie',
-		path: 'tri',
-		icon: 'money',
-		subMenu: {
-			allStaff: {
-				id: '',
-				text: 'All Staff',
-				path: 'list-pages/boxed-list',
-				icon: 'person',
-			},
-			newStaff: {
-				id: 'newStaff',
-				text: 'Crer Staff',
-				path: 'list-pages/fluid-list',
-				icon: 'person',
-			},
-		},
-	},
-};
+// export const trisoriesMenuAdmin = {
+// 	pages: {
+// 		id: 'trisoriePage',
+// 		text: 'Trisorie',
+// 		icon: 'money',
+// 	},
+// 	listPages: {
+// 		id: 'trisorie',
+// 		text: 'Trisorie',
+// 		path: 'tri',
+// 		icon: 'money',
+// 		subMenu: {
+// 			allStaff: {
+// 				id: '',
+// 				text: 'All Staff',
+// 				path: 'list-pages/boxed-list',
+// 				icon: 'person',
+// 			},
+// 			newStaff: {
+// 				id: 'newStaff',
+// 				text: 'Crer Staff',
+// 				path: 'list-pages/fluid-list',
+// 				icon: 'person',
+// 			},
+// 		},
+// 	},
+// };
 
-export const playerMenuAdmin = {
-	pages: {
-		id: 'playerPage',
-		text: 'Joueurs',
-		icon: 'Extension',
-	},
+// export const playerMenuAdmin = {
+// 	pages: {
+// 		id: 'playerPage',
+// 		text: 'Joueurs',
+// 		icon: 'Extension',
+// 	},
 
-	listPages: {
-		id: 'trisorie',
-		text: 'Joueurs',
-		path: 'player',
-		icon: 'SportsSoccer',
-		subMenu: {
-			player: {
-				id: 'player',
-				text: 'tous les Joueurs',
-				path: 'joueur',
-				icon: 'Person',
-			},
-			newPlayer: {
-				id: 'newPlaye',
-				text: 'Créer joueur',
-				path: 'joueur/forms',
-				icon: 'personAdd',
-			},
-			playerID: {
-				id: 'playerID',
-				text: 'playerID',
-				path: 'joueur/details',
-				hide: true,
-			},
-			updatePlayer: {
-				id: 'updatePlayer',
-				text: 'updatePlayer',
-				path: 'joueur/edit',
-				hide: true,
-			},
-		},
-	},
-};
+// 	listPages: {
+// 		id: 'trisorie',
+// 		text: 'Joueurs',
+// 		path: 'player',
+// 		icon: 'SportsSoccer',
+// 		subMenu: {
+// 			player: {
+// 				id: 'player',
+// 				text: 'tous les Joueurs',
+// 				path: 'joueur',
+// 				icon: 'Person',
+// 			},
+// 			newPlayer: {
+// 				id: 'newPlaye',
+// 				text: 'Créer joueur',
+// 				path: 'joueur/forms',
+// 				icon: 'personAdd',
+// 			},
+// 			playerID: {
+// 				id: 'playerID',
+// 				text: 'playerID',
+// 				path: 'joueur/details',
+// 				hide: true,
+// 			},
+// 			updatePlayer: {
+// 				id: 'updatePlayer',
+// 				text: 'updatePlayer',
+// 				path: 'joueur/edit',
+// 				hide: true,
+// 			},
+// 		},
+// 	},
+// };
 
 export const demoPagesMenu = {
 	pages: {

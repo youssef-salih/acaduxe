@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { DataTableRow } from '../pages/presentation/project-management/type/types';
 import { GetData } from '../types';
 

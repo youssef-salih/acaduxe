@@ -1,64 +1,17 @@
 import React, { lazy } from 'react';
 import { RouteProps } from 'react-router-dom';
 import {
-	TeamMenuAdmin,
-	coachMenuAdmin,
-	playerMenuAdmin,
+
 	componentPagesMenu,
 	dashboardPagesMenu,
 	demoPagesMenu,
 	gettingStartedPagesMenu,
 	pageLayoutTypesPagesMenu,
-	staffMenuAdmin,
-	clubMenuAdmin,
+
 } from '../menu';
 import Login from '../pages/presentation/auth/Login';
 
-// teams
-const LISTS = {
-	LIST_TEAM: lazy(() => import('../pages/teams/_List/ListTeam')),
-};
-const FORMS = {
-	FORM_TEAM: lazy(() => import('../pages/teams/_forms/FormTeamOp')),
-	FORM_TEAM1: lazy(() => import('../pages/teams/_forms/FormTeam')),
-	FORM_EDIT_Team: lazy(() => import('../pages/teams/_forms/FormEdit')),
-};
 
-// coaches
-const LISTSCOACHES = {
-	LIST_COACHES: lazy(() => import('../pages/entraineur/_list/ListCoaches')),
-	DETAIL_COACH: lazy(() => import('../pages/entraineur/_list/DetailCoaches')),
-};
-
-const FORMS_COACHES = {
-	FORMS_COACHES: lazy(() => import('../pages/entraineur/_forms/FormCoaches')),
-	FORM_EDIT_COACH: lazy(() => import('../pages/entraineur/_forms/FormCoachesEdit')),
-};
-
-// players
-const PLAYERS = {
-	LISTS_PLAYER: lazy(() => import('../pages/players/_List/ListPlayer')),
-	SINGLE_PLAYER: lazy(() => import('../pages/players/_Single/singlePlayer')),
-	FORMS_PLAYER: lazy(() => import('../pages/players/_forms/FormPlayer')),
-
-	UPDATE_PLAYER: lazy(() => import('../pages/players/_forms/EditPlayer')),
-};
-
-// staff
-const STAFF = {
-	LIST_STAFF: lazy(() => import('../pages/staff/_List/ListStaff')),
-	FORM_STAFF: lazy(() => import('../pages/staff/_forms/FormsStaff')),
-	SINGLE_STAFF: lazy(() => import('../pages/staff/_Single/SingleStaff')),
-	UPDATE_STAFF: lazy(() => import('../pages/staff/_forms/EditStaff')),
-};
-
-// clubs
-const CLUB = {
-	LIST_CLUB: lazy(() => import('../pages/clubs/_List/ListClub')),
-	FORM_CLUB: lazy(() => import('../pages/clubs/_Forms/FormsClubs')),
-	EDIT_CLUB: lazy(() => import('../pages/clubs/_Forms/EditClub')),
-	ID_CLUB: lazy(() => import('../pages/clubs/_Single/SingleClub')),
-};
 // event
 const EVENT = {
 	LIST_CLUB: lazy(() => import('../pages/event/ListEvent')),
@@ -245,149 +198,6 @@ const EXTRA = {
 };
 
 const presentation: RouteProps[] = [
-	{
-		path: TeamMenuAdmin.listPages.subMenu.newTeam.path,
-		element: <FORMS.FORM_TEAM />,
-	},
-	{
-		path: '/equipe/ajouter/1',
-		element: <FORMS.FORM_TEAM1 />,
-	},
-	// players
-	// list
-	{
-		path: playerMenuAdmin.listPages.subMenu.player.path,
-		element: <PLAYERS.LISTS_PLAYER />,
-	},
-
-	// forms
-	{
-		path: playerMenuAdmin.listPages.subMenu.newPlayer.path,
-		element: <PLAYERS.FORMS_PLAYER />,
-	},
-
-	// Single players
-	{
-		path: `${playerMenuAdmin.listPages.subMenu.updatePlayer.path}/:id`,
-		element: <PLAYERS.UPDATE_PLAYER />,
-	},
-
-	// Update players
-	{
-		path: `${playerMenuAdmin.listPages.subMenu.playerID.path}/:id`,
-		element: <PLAYERS.SINGLE_PLAYER />,
-	},
-
-	// Staffs
-	// list
-	{
-		path: staffMenuAdmin.listPages.subMenu.allStaff.path,
-		element: <STAFF.LIST_STAFF />,
-	},
-	//  forms
-	{
-		path: staffMenuAdmin.listPages.subMenu.newStaff.path,
-		element: <STAFF.FORM_STAFF />,
-	},
-
-	// details
-	{
-		path: `${staffMenuAdmin.listPages.subMenu.detailsStaff.path}/:id`,
-		element: <STAFF.SINGLE_STAFF />,
-	},
-	// update
-	{
-		path: `${staffMenuAdmin.listPages.subMenu.editStaff.path}/:id`,
-		element: <STAFF.UPDATE_STAFF />,
-	},
-
-	// Clubs
-	// list
-	{
-		path: clubMenuAdmin.listPages.subMenu.allClub.path,
-		element: <CLUB.LIST_CLUB />,
-	},
-	//  forms
-	{
-		path: clubMenuAdmin.listPages.subMenu.newClub.path,
-		element: <CLUB.FORM_CLUB />,
-	},
-
-	{
-		path: `${clubMenuAdmin.listPages.subMenu.editClub.path}/:id`,
-		element: <CLUB.EDIT_CLUB />,
-	},
-
-	// Single
-	{
-		path: `${clubMenuAdmin.listPages.subMenu.idClub.path}/:id`,
-		element: <CLUB.ID_CLUB />,
-	},
-	{
-		path: '/equipe/edit',
-		element: <FORMS.FORM_EDIT_Team />,
-	},
-
-	{
-		path: TeamMenuAdmin.listPages.subMenu.Teams.path,
-		element: <LISTS.LIST_TEAM />,
-	},
-
-	{ path: coachMenuAdmin.listPages.subMenu.coach.path, element: <LISTSCOACHES.LIST_COACHES /> },
-	{
-		path: `entraineur/detail/:id`,
-		element: <LISTSCOACHES.DETAIL_COACH />,
-	},
-
-	{
-		path: 'entraineur/ajouter',
-		element: <FORMS_COACHES.FORMS_COACHES />,
-	},
-	{
-		path: 'entraineur/modifier/:id',
-		element: <FORMS_COACHES.FORM_EDIT_COACH />,
-	},
-
-	{
-		path: 'evenement',
-		element: <EVENT.LIST_CLUB />,
-	},
-
-	{
-		path: playerMenuAdmin.listPages.subMenu.player.path,
-		element: <PLAYERS.LISTS_PLAYER />,
-	},
-
-	{
-		path: playerMenuAdmin.listPages.subMenu.newPlayer.path,
-		element: <PLAYERS.FORMS_PLAYER />,
-	},
-
-	{
-		path: `${playerMenuAdmin.listPages.subMenu.playerID.path}/:id`,
-		element: <PLAYERS.SINGLE_PLAYER />,
-	},
-
-	{
-		path: staffMenuAdmin.listPages.subMenu.allStaff.path,
-		element: <STAFF.LIST_STAFF />,
-	},
-
-	{
-		path: staffMenuAdmin.listPages.subMenu.newStaff.path,
-		element: <STAFF.FORM_STAFF />,
-	},
-
-	{
-		path: clubMenuAdmin.listPages.subMenu.allClub.path,
-		element: <CLUB.LIST_CLUB />,
-	},
-
-	{
-		path: clubMenuAdmin.listPages.subMenu.newClub.path,
-		element: <CLUB.FORM_CLUB />,
-	},
-
 	/**
 	 * Landing
 	 */

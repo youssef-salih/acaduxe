@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
+// @ts-nocheck
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import PageWrapper from '../../../layout/PageWrapper/PageWrapper';

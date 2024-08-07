@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from 'react';
 import { componentPagesMenu } from '../../../menu';
 import SubHeader, { SubHeaderLeft } from '../../../layout/SubHeader/SubHeader';

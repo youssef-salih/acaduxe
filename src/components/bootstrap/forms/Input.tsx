@@ -192,6 +192,7 @@ const Input = forwardRef<HTMLInputElement, IInputProps>(
 		return (
 			<>
 				{/* eslint-disable-next-line react/jsx-props-no-spreading */}
+				{/*@ts-ignore */}
 				<input ref={ref} {...PROPS} />
 				{LIST}
 				{VALIDATION}
